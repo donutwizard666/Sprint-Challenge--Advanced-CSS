@@ -1,1 +1,33 @@
-// Mixins Here
+// Mixins Here//
+.nav-font {
+    font-size: 1rem;
+    text-decoration: none;
+    color: @river-bend;
+}
+
+.header-style {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: @wild-sand;
+    padding-top: 10px;
+
+}
+
+//parametric mixin here//
+
+.custom-btn(@bgcolor:#23293B,@font-color:#F6F7F8){
+    background-color: @bgcolor;
+    color: @font-color;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    width: 40%;
+}
+
+
+
