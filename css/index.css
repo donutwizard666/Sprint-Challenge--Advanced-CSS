@@ -1,5 +1,5 @@
 .nav-font {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #454A59;
 }
@@ -190,7 +190,7 @@ header nav {
 }
 header a {
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #454A59;
 }
@@ -210,6 +210,7 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  width: 100%;
 }
 .home .intro p {
   padding: 0 15px;
@@ -259,7 +260,7 @@ footer {
   padding: 10px;
   border-radius: 10px;
   font-size: 1.6rem;
-  width: 40%;
+  width: 30%;
 }
 .home .walk .walk-img {
   width: 46%;
