@@ -5,11 +5,10 @@
 }
 .header-style {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: #F6F6F6;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -175,24 +174,39 @@ p {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: #F6F6F6;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 header h1 {
   font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }
 header nav {
   justify-content: space-evenly;
-  padding: 10px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
 }
 header a {
-  padding: 10px;
+  padding: 20px;
   font-size: 1.2rem;
   text-decoration: none;
   color: #454A59;
+}
+@media (max-width: 500px) {
+  header a {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+}
+.nav-bar {
+  background-color: #F6F6F6;
 }
 footer {
   color: #22283B;
@@ -204,9 +218,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .main-header {
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .main-header {
+    max-width: 100%;
+  }
+}
 .home .intro {
-  border: 1px solid black;
-  display: flex;
+  display: inline;
 }
 .home .intro h2 {
   padding: 15px;
@@ -220,11 +241,25 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    padding: 5px;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -242,8 +277,23 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 10px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -258,16 +308,35 @@ footer {
   justify-content: center;
   cursor: pointer;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.6rem;
   width: 30%;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: pink;
+  color: darkblue;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px;
+  }
+}
 .home .walk .walk-img {
-  width: 46%;
+  width: 50%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+    padding: 5px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
 }
